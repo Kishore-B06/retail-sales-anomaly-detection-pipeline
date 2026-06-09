@@ -1,0 +1,52 @@
+[2026-03-05T08:34:42.535+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-03-05T08:34:42.656+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: retail_anomaly_pipeline.ingest_csvs_to_snowflake manual__2026-03-05T08:34:35.995642+00:00 [queued]>
+[2026-03-05T08:34:42.674+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: retail_anomaly_pipeline.ingest_csvs_to_snowflake manual__2026-03-05T08:34:35.995642+00:00 [queued]>
+[2026-03-05T08:34:42.676+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-03-05T08:34:42.709+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): ingest_csvs_to_snowflake> on 2026-03-05 08:34:35.995642+00:00
+[2026-03-05T08:34:42.764+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=516) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-03-05T08:34:42.767+0000] {standard_task_runner.py:63} INFO - Started process 519 to run task
+[2026-03-05T08:34:42.764+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'retail_anomaly_pipeline', 'ingest_csvs_to_snowflake', 'manual__2026-03-05T08:34:35.995642+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/retail_pipeline.py', '--cfg-path', '/tmp/tmp09feum1t']
+[2026-03-05T08:34:42.770+0000] {standard_task_runner.py:91} INFO - Job 12: Subtask ingest_csvs_to_snowflake
+[2026-03-05T08:34:42.931+0000] {task_command.py:426} INFO - Running <TaskInstance: retail_anomaly_pipeline.ingest_csvs_to_snowflake manual__2026-03-05T08:34:35.995642+00:00 [running]> on host c37376863fc4
+[2026-03-05T08:34:43.360+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='retail-de' AIRFLOW_CTX_DAG_ID='retail_anomaly_pipeline' AIRFLOW_CTX_TASK_ID='ingest_csvs_to_snowflake' AIRFLOW_CTX_EXECUTION_DATE='2026-03-05T08:34:35.995642+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-05T08:34:35.995642+00:00'
+[2026-03-05T08:34:43.366+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-03-05T08:34:43.394+0000] {ingest.py:86} INFO - === TASK 1: INGESTION STARTED ===
+[2026-03-05T08:34:43.400+0000] {connection.py:399} INFO - Snowflake Connector for Python Version: 3.10.0, Python Version: 3.12.3, Platform: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36
+[2026-03-05T08:34:43.403+0000] {connection.py:1239} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2026-03-05T08:34:44.155+0000] {ingest.py:92} INFO - Reading /opt/***/data/dim_date.csv ...
+[2026-03-05T08:34:44.177+0000] {ingest.py:95} INFO -   → 180 rows read from CSV
+[2026-03-05T08:34:44.178+0000] {ingest.py:98} INFO -   → Truncating dim_date ...
+[2026-03-05T08:34:44.634+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2026-03-05T08:34:44.636+0000] {ingest.py:102} INFO -   → Inserting into dim_date ...
+[2026-03-05T08:34:45.658+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2026-03-05T08:34:45.662+0000] {ingest.py:104} INFO -   → 180 rows inserted into dim_date
+[2026-03-05T08:34:46.170+0000] {ingest.py:92} INFO - Reading /opt/***/data/dim_store.csv ...
+[2026-03-05T08:34:46.178+0000] {ingest.py:95} INFO -   → 10 rows read from CSV
+[2026-03-05T08:34:46.180+0000] {ingest.py:98} INFO -   → Truncating dim_store ...
+[2026-03-05T08:34:46.578+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2026-03-05T08:34:46.579+0000] {ingest.py:102} INFO -   → Inserting into dim_store ...
+[2026-03-05T08:34:46.984+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2026-03-05T08:34:46.985+0000] {ingest.py:104} INFO -   → 10 rows inserted into dim_store
+[2026-03-05T08:34:47.272+0000] {ingest.py:92} INFO - Reading /opt/***/data/dim_product.csv ...
+[2026-03-05T08:34:47.280+0000] {ingest.py:95} INFO -   → 50 rows read from CSV
+[2026-03-05T08:34:47.281+0000] {ingest.py:98} INFO -   → Truncating dim_product ...
+[2026-03-05T08:34:47.524+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2026-03-05T08:34:47.526+0000] {ingest.py:102} INFO -   → Inserting into dim_product ...
+[2026-03-05T08:34:48.187+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2026-03-05T08:34:48.189+0000] {ingest.py:104} INFO -   → 50 rows inserted into dim_product
+[2026-03-05T08:34:48.538+0000] {ingest.py:92} INFO - Reading /opt/***/data/fact_daily_sales.csv ...
+[2026-03-05T08:34:50.479+0000] {ingest.py:95} INFO -   → 90033 rows read from CSV
+[2026-03-05T08:34:50.480+0000] {ingest.py:98} INFO -   → Truncating fact_daily_sales ...
+[2026-03-05T08:34:50.683+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2026-03-05T08:34:50.684+0000] {ingest.py:102} INFO -   → Inserting into fact_daily_sales ...
+[2026-03-05T08:35:38.650+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2026-03-05T08:35:38.654+0000] {ingest.py:104} INFO -   → 90033 rows inserted into fact_daily_sales
+[2026-03-05T08:35:39.894+0000] {ingest.py:109} INFO - === TASK 1: INGESTION COMPLETE ===
+[2026-03-05T08:35:39.896+0000] {connection.py:762} INFO - closed
+[2026-03-05T08:35:39.966+0000] {connection.py:768} INFO - No async queries seem to be running, deleting session
+[2026-03-05T08:35:40.088+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-03-05T08:35:40.090+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-03-05T08:35:40.110+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=retail_anomaly_pipeline, task_id=ingest_csvs_to_snowflake, run_id=manual__2026-03-05T08:34:35.995642+00:00, execution_date=20260305T083435, start_date=20260305T083442, end_date=20260305T083540
+[2026-03-05T08:35:40.508+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-03-05T08:35:40.558+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-03-05T08:35:40.588+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

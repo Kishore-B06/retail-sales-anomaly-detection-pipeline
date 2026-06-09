@@ -1,0 +1,43 @@
+[2026-03-05T08:34:53.869+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-03-05T08:34:53.944+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: retail_anomaly_pipeline.export_dashboard_json scheduled__2026-03-04T06:00:00+00:00 [queued]>
+[2026-03-05T08:34:53.961+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: retail_anomaly_pipeline.export_dashboard_json scheduled__2026-03-04T06:00:00+00:00 [queued]>
+[2026-03-05T08:34:53.965+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-03-05T08:34:53.994+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): export_dashboard_json> on 2026-03-04 06:00:00+00:00
+[2026-03-05T08:34:54.017+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=528) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-03-05T08:34:54.020+0000] {standard_task_runner.py:63} INFO - Started process 531 to run task
+[2026-03-05T08:34:54.018+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'retail_anomaly_pipeline', 'export_dashboard_json', 'scheduled__2026-03-04T06:00:00+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/retail_pipeline.py', '--cfg-path', '/tmp/tmp7xbryqsh']
+[2026-03-05T08:34:54.026+0000] {standard_task_runner.py:91} INFO - Job 14: Subtask export_dashboard_json
+[2026-03-05T08:34:54.348+0000] {task_command.py:426} INFO - Running <TaskInstance: retail_anomaly_pipeline.export_dashboard_json scheduled__2026-03-04T06:00:00+00:00 [running]> on host c37376863fc4
+[2026-03-05T08:34:54.750+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='retail-de' AIRFLOW_CTX_DAG_ID='retail_anomaly_pipeline' AIRFLOW_CTX_TASK_ID='export_dashboard_json' AIRFLOW_CTX_EXECUTION_DATE='2026-03-04T06:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-03-04T06:00:00+00:00'
+[2026-03-05T08:34:54.753+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-03-05T08:34:54.787+0000] {export.py:108} INFO - === TASK 4: EXPORT STARTED ===
+[2026-03-05T08:34:54.791+0000] {connection.py:399} INFO - Snowflake Connector for Python Version: 3.10.0, Python Version: 3.12.3, Platform: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36
+[2026-03-05T08:34:54.795+0000] {connection.py:1239} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2026-03-05T08:34:55.577+0000] {export.py:112} INFO - Querying timeline data ...
+[2026-03-05T08:34:55.806+0000] {cursor.py:1149} INFO - Number of results in first chunk: 180
+[2026-03-05T08:34:55.810+0000] {export.py:119} INFO - Querying store performance ...
+[2026-03-05T08:34:56.247+0000] {cursor.py:1149} INFO - Number of results in first chunk: 10
+[2026-03-05T08:34:56.249+0000] {export.py:125} INFO - Querying category breakdown ...
+[2026-03-05T08:34:56.483+0000] {cursor.py:1149} INFO - Number of results in first chunk: 5
+[2026-03-05T08:34:56.485+0000] {export.py:131} INFO - Querying region breakdown ...
+[2026-03-05T08:34:56.732+0000] {cursor.py:1149} INFO - Number of results in first chunk: 4
+[2026-03-05T08:34:56.734+0000] {export.py:136} INFO - Querying monthly trend ...
+[2026-03-05T08:34:56.929+0000] {cursor.py:1149} INFO - Number of results in first chunk: 6
+[2026-03-05T08:34:56.931+0000] {export.py:141} INFO - Querying pipeline summary ...
+[2026-03-05T08:34:57.159+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2026-03-05T08:34:57.285+0000] {cursor.py:1149} INFO - Number of results in first chunk: 2
+[2026-03-05T08:34:57.303+0000] {export.py:174} INFO - Dashboard JSON written to /opt/***/data/dashboard_data.json
+[2026-03-05T08:34:57.304+0000] {export.py:175} INFO -   Raw rows: 0 → Clean rows: 89,600
+[2026-03-05T08:34:57.305+0000] {export.py:176} INFO -   Dupes removed: -89,600
+[2026-03-05T08:34:57.307+0000] {export.py:177} INFO -   Total revenue: ₹1,112,462,210.00
+[2026-03-05T08:34:57.308+0000] {export.py:178} INFO -   Spikes: 7 days
+[2026-03-05T08:34:57.309+0000] {export.py:179} INFO -   Drops:  5 days
+[2026-03-05T08:34:57.310+0000] {export.py:180} INFO - === TASK 4: EXPORT COMPLETE ===
+[2026-03-05T08:34:57.311+0000] {connection.py:762} INFO - closed
+[2026-03-05T08:34:57.383+0000] {connection.py:768} INFO - No async queries seem to be running, deleting session
+[2026-03-05T08:34:57.456+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-03-05T08:34:57.458+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-03-05T08:34:57.477+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=retail_anomaly_pipeline, task_id=export_dashboard_json, run_id=scheduled__2026-03-04T06:00:00+00:00, execution_date=20260304T060000, start_date=20260305T083453, end_date=20260305T083457
+[2026-03-05T08:34:57.535+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-03-05T08:34:57.577+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-03-05T08:34:57.583+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

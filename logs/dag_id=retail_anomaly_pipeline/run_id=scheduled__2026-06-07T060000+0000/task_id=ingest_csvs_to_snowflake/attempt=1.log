@@ -1,0 +1,137 @@
+[2026-06-08T11:32:30.208+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-08T11:32:30.297+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: retail_anomaly_pipeline.ingest_csvs_to_snowflake scheduled__2026-06-07T06:00:00+00:00 [queued]>
+[2026-06-08T11:32:30.307+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: retail_anomaly_pipeline.ingest_csvs_to_snowflake scheduled__2026-06-07T06:00:00+00:00 [queued]>
+[2026-06-08T11:32:30.309+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-06-08T11:32:30.323+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): ingest_csvs_to_snowflake> on 2026-06-07 06:00:00+00:00
+[2026-06-08T11:32:30.384+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=274) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-08T11:32:30.356+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'retail_anomaly_pipeline', 'ingest_csvs_to_snowflake', 'scheduled__2026-06-07T06:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/retail_pipeline.py', '--cfg-path', '/tmp/tmpnme2e_01']
+[2026-06-08T11:32:30.539+0000] {standard_task_runner.py:91} INFO - Job 2: Subtask ingest_csvs_to_snowflake
+[2026-06-08T11:32:30.540+0000] {standard_task_runner.py:63} INFO - Started process 277 to run task
+[2026-06-08T11:32:31.117+0000] {task_command.py:426} INFO - Running <TaskInstance: retail_anomaly_pipeline.ingest_csvs_to_snowflake scheduled__2026-06-07T06:00:00+00:00 [running]> on host 5666d8c58f36
+[2026-06-08T11:32:31.595+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='retail-de' AIRFLOW_CTX_DAG_ID='retail_anomaly_pipeline' AIRFLOW_CTX_TASK_ID='ingest_csvs_to_snowflake' AIRFLOW_CTX_EXECUTION_DATE='2026-06-07T06:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-06-07T06:00:00+00:00'
+[2026-06-08T11:32:31.599+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-08T11:32:31.724+0000] {ingest.py:86} INFO - === TASK 1: INGESTION STARTED ===
+[2026-06-08T11:32:31.726+0000] {connection.py:399} INFO - Snowflake Connector for Python Version: 3.10.0, Python Version: 3.12.3, Platform: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36
+[2026-06-08T11:32:31.735+0000] {connection.py:1239} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2026-06-08T11:32:34.656+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-08T11:32:34.658+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/tasks/ingest.py", line 87, in run_ingest
+    conn = get_connection()
+           ^^^^^^^^^^^^^^^^
+  File "/opt/airflow/tasks/snowflake_conn.py", line 17, in get_connection
+    conn = snowflake.connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/__init__.py", line 55, in Connect
+    return SnowflakeConnection(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/connection.py", line 442, in __init__
+    self.connect(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/connection.py", line 745, in connect
+    self.__open_connection()
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/connection.py", line 1073, in __open_connection
+    self.authenticate_with_retry(self.auth_class)
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/connection.py", line 1345, in authenticate_with_retry
+    self._authenticate(auth_instance)
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/connection.py", line 1373, in _authenticate
+    auth.authenticate(
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/auth/_auth.py", line 250, in authenticate
+    ret = self._rest._post_request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/network.py", line 734, in _post_request
+    ret = self.fetch(
+          ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/network.py", line 843, in fetch
+    ret = self._request_exec_wrapper(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/network.py", line 979, in _request_exec_wrapper
+    raise e
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/network.py", line 884, in _request_exec_wrapper
+    return_object = self._request_exec(
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/network.py", line 1193, in _request_exec
+    raise err
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/network.py", line 1135, in _request_exec
+    raise_failed_request_error(
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/network.py", line 238, in raise_failed_request_error
+    Error.errorhandler_wrapper(
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/errors.py", line 290, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/errors.py", line 348, in hand_to_other_handler
+    connection.errorhandler(connection, cursor, error_class, error_value)
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/errors.py", line 221, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.InterfaceError: 250003 (08001): None: 404 Not Found: post https://lbtguvz-xo18875.snowflakecomputing.com:443/session/v1/login-request?request_id=9a7086fa-4079-4738-a2e6-bcf23db9d0f8&databaseName=retail_anomaly_db&schemaName=analytics&warehouse=retail_wh&roleName=ACCOUNTADMIN&request_guid=bf24d5bf-f35e-41e8-98af-a583c3f25bb7
+[2026-06-08T11:32:34.680+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=retail_anomaly_pipeline, task_id=ingest_csvs_to_snowflake, run_id=scheduled__2026-06-07T06:00:00+00:00, execution_date=20260607T060000, start_date=20260608T113230, end_date=20260608T113234
+[2026-06-08T11:32:34.707+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 2 for task ingest_csvs_to_snowflake (250003 (08001): None: 404 Not Found: post https://lbtguvz-xo18875.snowflakecomputing.com:443/session/v1/login-request?request_id=9a7086fa-4079-4738-a2e6-bcf23db9d0f8&databaseName=retail_anomaly_db&schemaName=analytics&warehouse=retail_wh&roleName=ACCOUNTADMIN&request_guid=bf24d5bf-f35e-41e8-98af-a583c3f25bb7; 277)
+[2026-06-08T11:32:34.718+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2026-06-08T11:32:34.748+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-08T11:32:34.751+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-06-08T11:53:03.944+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-08T11:53:04.041+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: retail_anomaly_pipeline.ingest_csvs_to_snowflake scheduled__2026-06-07T06:00:00+00:00 [queued]>
+[2026-06-08T11:53:04.057+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: retail_anomaly_pipeline.ingest_csvs_to_snowflake scheduled__2026-06-07T06:00:00+00:00 [queued]>
+[2026-06-08T11:53:04.058+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-06-08T11:53:04.080+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): ingest_csvs_to_snowflake> on 2026-06-07 06:00:00+00:00
+[2026-06-08T11:53:04.140+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'retail_anomaly_pipeline', 'ingest_csvs_to_snowflake', 'scheduled__2026-06-07T06:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/retail_pipeline.py', '--cfg-path', '/tmp/tmpalxyi_6n']
+[2026-06-08T11:53:04.147+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=240) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-08T11:53:04.153+0000] {standard_task_runner.py:91} INFO - Job 2: Subtask ingest_csvs_to_snowflake
+[2026-06-08T11:53:04.154+0000] {standard_task_runner.py:63} INFO - Started process 243 to run task
+[2026-06-08T11:53:04.604+0000] {task_command.py:426} INFO - Running <TaskInstance: retail_anomaly_pipeline.ingest_csvs_to_snowflake scheduled__2026-06-07T06:00:00+00:00 [running]> on host eab91bc66d16
+[2026-06-08T11:53:04.940+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='retail-de' AIRFLOW_CTX_DAG_ID='retail_anomaly_pipeline' AIRFLOW_CTX_TASK_ID='ingest_csvs_to_snowflake' AIRFLOW_CTX_EXECUTION_DATE='2026-06-07T06:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-06-07T06:00:00+00:00'
+[2026-06-08T11:53:04.945+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-08T11:53:05.065+0000] {ingest.py:86} INFO - === TASK 1: INGESTION STARTED ===
+[2026-06-08T11:53:05.072+0000] {connection.py:399} INFO - Snowflake Connector for Python Version: 3.10.0, Python Version: 3.12.3, Platform: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36
+[2026-06-08T11:53:05.077+0000] {connection.py:1239} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2026-06-08T11:53:07.908+0000] {ingest.py:92} INFO - Reading /opt/***/data/dim_date.csv ...
+[2026-06-08T11:53:07.954+0000] {ingest.py:95} INFO -   → 180 rows read from CSV
+[2026-06-08T11:53:07.955+0000] {ingest.py:98} INFO -   → Truncating dim_date ...
+[2026-06-08T11:53:08.173+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2026-06-08T11:53:08.175+0000] {ingest.py:102} INFO -   → Inserting into dim_date ...
+[2026-06-08T11:53:09.125+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2026-06-08T11:53:09.126+0000] {ingest.py:104} INFO -   → 180 rows inserted into dim_date
+[2026-06-08T11:53:09.495+0000] {ingest.py:92} INFO - Reading /opt/***/data/dim_store.csv ...
+[2026-06-08T11:53:09.542+0000] {ingest.py:95} INFO -   → 10 rows read from CSV
+[2026-06-08T11:53:09.543+0000] {ingest.py:98} INFO -   → Truncating dim_store ...
+[2026-06-08T11:53:09.821+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2026-06-08T11:53:09.822+0000] {ingest.py:102} INFO -   → Inserting into dim_store ...
+[2026-06-08T11:53:10.274+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2026-06-08T11:53:10.275+0000] {ingest.py:104} INFO -   → 10 rows inserted into dim_store
+[2026-06-08T11:53:10.653+0000] {ingest.py:92} INFO - Reading /opt/***/data/dim_product.csv ...
+[2026-06-08T11:53:10.683+0000] {ingest.py:95} INFO -   → 50 rows read from CSV
+[2026-06-08T11:53:10.684+0000] {ingest.py:98} INFO -   → Truncating dim_product ...
+[2026-06-08T11:53:10.921+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2026-06-08T11:53:10.922+0000] {ingest.py:102} INFO -   → Inserting into dim_product ...
+[2026-06-08T11:53:11.414+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2026-06-08T11:53:11.415+0000] {ingest.py:104} INFO -   → 50 rows inserted into dim_product
+[2026-06-08T11:53:11.806+0000] {ingest.py:92} INFO - Reading /opt/***/data/fact_daily_sales.csv ...
+[2026-06-08T11:53:13.731+0000] {ingest.py:95} INFO -   → 90033 rows read from CSV
+[2026-06-08T11:53:13.732+0000] {ingest.py:98} INFO -   → Truncating fact_daily_sales ...
+[2026-06-08T11:53:13.953+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2026-06-08T11:53:13.955+0000] {ingest.py:102} INFO -   → Inserting into fact_daily_sales ...
+[2026-06-08T11:54:03.225+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2026-06-08T11:54:03.244+0000] {ingest.py:104} INFO -   → 90033 rows inserted into fact_daily_sales
+[2026-06-08T11:54:03.834+0000] {ingest.py:109} INFO - === TASK 1: INGESTION COMPLETE ===
+[2026-06-08T11:54:03.841+0000] {connection.py:762} INFO - closed
+[2026-06-08T11:54:03.954+0000] {connection.py:768} INFO - No async queries seem to be running, deleting session
+[2026-06-08T11:54:04.389+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-06-08T11:54:04.425+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-08T11:54:04.634+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=retail_anomaly_pipeline, task_id=ingest_csvs_to_snowflake, run_id=scheduled__2026-06-07T06:00:00+00:00, execution_date=20260607T060000, start_date=20260608T115304, end_date=20260608T115404
+[2026-06-08T11:54:04.814+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-06-08T11:54:04.996+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-06-08T11:54:05.001+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
