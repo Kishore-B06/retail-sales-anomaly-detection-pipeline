@@ -1,0 +1,51 @@
+product_id,product_name,category,price
+1,Product_1,Personal Care,4380
+2,Product_2,Clothing,4683
+3,Product_3,Clothing,4636
+4,Product_4,Clothing,1819
+5,Product_5,Clothing,2116
+6,Product_6,Personal Care,2613
+7,Product_7,Clothing,2108
+8,Product_8,Personal Care,852
+9,Product_9,Electronics,4015
+10,Product_10,Electronics,671
+11,Product_11,Home,3237
+12,Product_12,Personal Care,2316
+13,Product_13,Personal Care,4142
+14,Product_14,Clothing,398
+15,Product_15,Home,4797
+16,Product_16,Personal Care,756
+17,Product_17,Home,1193
+18,Product_18,Personal Care,50
+19,Product_19,Electronics,2184
+20,Product_20,Home,2352
+21,Product_21,Clothing,1486
+22,Product_22,Personal Care,179
+23,Product_23,Electronics,2749
+24,Product_24,Electronics,4942
+25,Product_25,Home,1069
+26,Product_26,Personal Care,1176
+27,Product_27,Electronics,360
+28,Product_28,Electronics,3848
+29,Product_29,Clothing,2924
+30,Product_30,Clothing,709
+31,Product_31,Electronics,2380
+32,Product_32,Home,1693
+33,Product_33,Clothing,2284
+34,Product_34,Groceries,2434
+35,Product_35,Clothing,1243
+36,Product_36,Groceries,4568
+37,Product_37,Groceries,1774
+38,Product_38,Electronics,2578
+39,Product_39,Home,632
+40,Product_40,Electronics,2071
+41,Product_41,Electronics,2519
+42,Product_42,Home,3380
+43,Product_43,Clothing,3457
+44,Product_44,Electronics,2142
+45,Product_45,Home,675
+46,Product_46,Electronics,4135
+47,Product_47,Electronics,2369
+48,Product_48,Groceries,565
+49,Product_49,Groceries,4428
+50,Product_50,Groceries,4127

@@ -1,0 +1,11 @@
+store_id,store_name,region,city,store_open_date
+1,Store_1,North,Kolkata,2020-09-05
+2,Store_2,South,Delhi,2020-02-08
+3,Store_3,West,Kolkata,2020-09-01
+4,Store_4,South,Mumbai,2020-01-19
+5,Store_5,North,Delhi,2020-10-04
+6,Store_6,East,Delhi,2020-02-27
+7,Store_7,East,Chennai,2020-01-07
+8,Store_8,South,Bengaluru,2020-06-23
+9,Store_9,East,Mumbai,2020-11-18
+10,Store_10,West,Bengaluru,2020-03-17

@@ -1,0 +1,1606 @@
+{
+  "generated_at": "2026-06-08T11:54:26.722328",
+  "raw_count": 90033,
+  "clean_count": 89600,
+  "dupes": 433,
+  "total_revenue": 1112462210.0,
+  "spike_days": 7,
+  "drop_days": 5,
+  "spike_impact": 3856652.02,
+  "drop_impact": -2372349.75,
+  "timeline": [
+    {
+      "date": "2025-01-01",
+      "weekday": "Wednesday",
+      "sales": 6387277.0,
+      "rolling": 6387277.0,
+      "dev": 0.0,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-01-02",
+      "weekday": "Thursday",
+      "sales": 6269240.0,
+      "rolling": 6328258.5,
+      "dev": -0.9326,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-01-03",
+      "weekday": "Friday",
+      "sales": 5830802.0,
+      "rolling": 6162439.67,
+      "dev": -5.3816,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-01-04",
+      "weekday": "Saturday",
+      "sales": 6380440.0,
+      "rolling": 6216939.75,
+      "dev": 2.6299,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-01-05",
+      "weekday": "Sunday",
+      "sales": 7059983.0,
+      "rolling": 6385548.4,
+      "dev": 10.5619,
+      "type": "SPIKE"
+    },
+    {
+      "date": "2025-01-06",
+      "weekday": "Monday",
+      "sales": 5791800.0,
+      "rolling": 6286590.33,
+      "dev": -7.8706,
+      "type": "DROP"
+    },
+    {
+      "date": "2025-01-07",
+      "weekday": "Tuesday",
+      "sales": 5779886.0,
+      "rolling": 6214204.0,
+      "dev": -6.9891,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-01-08",
+      "weekday": "Wednesday",
+      "sales": 6303747.0,
+      "rolling": 6202271.14,
+      "dev": 1.6361,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-01-09",
+      "weekday": "Thursday",
+      "sales": 6340725.0,
+      "rolling": 6212483.29,
+      "dev": 2.0643,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-01-10",
+      "weekday": "Friday",
+      "sales": 6124036.0,
+      "rolling": 6254373.86,
+      "dev": -2.0839,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-01-11",
+      "weekday": "Saturday",
+      "sales": 6186242.0,
+      "rolling": 6226631.29,
+      "dev": -0.6487,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-01-12",
+      "weekday": "Sunday",
+      "sales": 6108856.0,
+      "rolling": 6090756.0,
+      "dev": 0.2972,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-01-13",
+      "weekday": "Monday",
+      "sales": 5765827.0,
+      "rolling": 6087045.57,
+      "dev": -5.2771,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-01-14",
+      "weekday": "Tuesday",
+      "sales": 5992786.0,
+      "rolling": 6117459.86,
+      "dev": -2.038,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-01-15",
+      "weekday": "Wednesday",
+      "sales": 6430513.0,
+      "rolling": 6135569.29,
+      "dev": 4.8071,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-01-16",
+      "weekday": "Thursday",
+      "sales": 5613836.0,
+      "rolling": 6031728.0,
+      "dev": -6.9282,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-01-17",
+      "weekday": "Friday",
+      "sales": 6068876.0,
+      "rolling": 6023848.0,
+      "dev": 0.7475,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-01-18",
+      "weekday": "Saturday",
+      "sales": 6352069.0,
+      "rolling": 6047537.57,
+      "dev": 5.0356,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-01-19",
+      "weekday": "Sunday",
+      "sales": 6200077.0,
+      "rolling": 6060569.14,
+      "dev": 2.3019,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-01-20",
+      "weekday": "Monday",
+      "sales": 6106410.0,
+      "rolling": 6109223.86,
+      "dev": -0.0461,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-01-21",
+      "weekday": "Tuesday",
+      "sales": 5898145.0,
+      "rolling": 6095703.71,
+      "dev": -3.241,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-01-22",
+      "weekday": "Wednesday",
+      "sales": 6099068.0,
+      "rolling": 6048354.43,
+      "dev": 0.8385,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-01-23",
+      "weekday": "Thursday",
+      "sales": 6626708.0,
+      "rolling": 6193050.43,
+      "dev": 7.0023,
+      "type": "SPIKE"
+    },
+    {
+      "date": "2025-01-24",
+      "weekday": "Friday",
+      "sales": 6037129.0,
+      "rolling": 6188515.14,
+      "dev": -2.4462,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-01-25",
+      "weekday": "Saturday",
+      "sales": 6139701.0,
+      "rolling": 6158176.86,
+      "dev": -0.3,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-01-26",
+      "weekday": "Sunday",
+      "sales": 6408525.0,
+      "rolling": 6187955.14,
+      "dev": 3.5645,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-01-27",
+      "weekday": "Monday",
+      "sales": 6206685.0,
+      "rolling": 6202280.14,
+      "dev": 0.071,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-01-28",
+      "weekday": "Tuesday",
+      "sales": 5724500.0,
+      "rolling": 6177473.71,
+      "dev": -7.3327,
+      "type": "DROP"
+    },
+    {
+      "date": "2025-01-29",
+      "weekday": "Wednesday",
+      "sales": 6792031.0,
+      "rolling": 6276468.43,
+      "dev": 8.2142,
+      "type": "SPIKE"
+    },
+    {
+      "date": "2025-01-30",
+      "weekday": "Thursday",
+      "sales": 5789141.0,
+      "rolling": 6156816.0,
+      "dev": -5.9718,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-01-31",
+      "weekday": "Friday",
+      "sales": 5907791.0,
+      "rolling": 6138339.14,
+      "dev": -3.7559,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-01",
+      "weekday": "Saturday",
+      "sales": 6311985.0,
+      "rolling": 6162951.14,
+      "dev": 2.4182,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-02",
+      "weekday": "Sunday",
+      "sales": 5709571.0,
+      "rolling": 6063100.57,
+      "dev": -5.8308,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-03",
+      "weekday": "Monday",
+      "sales": 6030038.0,
+      "rolling": 6037865.29,
+      "dev": -0.1296,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-04",
+      "weekday": "Tuesday",
+      "sales": 6160374.0,
+      "rolling": 6100133.0,
+      "dev": 0.9875,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-05",
+      "weekday": "Wednesday",
+      "sales": 6159185.0,
+      "rolling": 6009726.43,
+      "dev": 2.4869,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-06",
+      "weekday": "Thursday",
+      "sales": 6225341.0,
+      "rolling": 6072040.71,
+      "dev": 2.5247,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-07",
+      "weekday": "Friday",
+      "sales": 6179446.0,
+      "rolling": 6110848.57,
+      "dev": 1.1226,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-08",
+      "weekday": "Saturday",
+      "sales": 6003258.0,
+      "rolling": 6066744.71,
+      "dev": -1.0465,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-09",
+      "weekday": "Sunday",
+      "sales": 5873832.0,
+      "rolling": 6090210.57,
+      "dev": -3.5529,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-10",
+      "weekday": "Monday",
+      "sales": 5859594.0,
+      "rolling": 6065861.43,
+      "dev": -3.4005,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-11",
+      "weekday": "Tuesday",
+      "sales": 6293173.0,
+      "rolling": 6084832.71,
+      "dev": 3.4239,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-12",
+      "weekday": "Wednesday",
+      "sales": 6235395.0,
+      "rolling": 6095719.86,
+      "dev": 2.2914,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-13",
+      "weekday": "Thursday",
+      "sales": 6107187.0,
+      "rolling": 6078840.71,
+      "dev": 0.4663,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-14",
+      "weekday": "Friday",
+      "sales": 5874723.0,
+      "rolling": 6035308.86,
+      "dev": -2.6608,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-15",
+      "weekday": "Saturday",
+      "sales": 6679077.0,
+      "rolling": 6131854.43,
+      "dev": 8.9243,
+      "type": "SPIKE"
+    },
+    {
+      "date": "2025-02-16",
+      "weekday": "Sunday",
+      "sales": 6171250.0,
+      "rolling": 6174342.71,
+      "dev": -0.0501,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-17",
+      "weekday": "Monday",
+      "sales": 6077422.0,
+      "rolling": 6205461.0,
+      "dev": -2.0633,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-18",
+      "weekday": "Tuesday",
+      "sales": 6632223.0,
+      "rolling": 6253896.71,
+      "dev": 6.0494,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-19",
+      "weekday": "Wednesday",
+      "sales": 6362516.0,
+      "rolling": 6272056.86,
+      "dev": 1.4423,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-20",
+      "weekday": "Thursday",
+      "sales": 6356656.0,
+      "rolling": 6307695.29,
+      "dev": 0.7762,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-21",
+      "weekday": "Friday",
+      "sales": 6052668.0,
+      "rolling": 6333116.0,
+      "dev": -4.4283,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-22",
+      "weekday": "Saturday",
+      "sales": 6115055.0,
+      "rolling": 6252541.43,
+      "dev": -2.1989,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-23",
+      "weekday": "Sunday",
+      "sales": 5813127.0,
+      "rolling": 6201381.0,
+      "dev": -6.2608,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-24",
+      "weekday": "Monday",
+      "sales": 6243580.0,
+      "rolling": 6225117.86,
+      "dev": 0.2966,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-25",
+      "weekday": "Tuesday",
+      "sales": 6306013.0,
+      "rolling": 6178516.43,
+      "dev": 2.0635,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-26",
+      "weekday": "Wednesday",
+      "sales": 6451669.0,
+      "rolling": 6191252.57,
+      "dev": 4.2062,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-27",
+      "weekday": "Thursday",
+      "sales": 6250806.0,
+      "rolling": 6176131.14,
+      "dev": 1.2091,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-02-28",
+      "weekday": "Friday",
+      "sales": 6402501.0,
+      "rolling": 6226107.29,
+      "dev": 2.8331,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-01",
+      "weekday": "Saturday",
+      "sales": 5682757.0,
+      "rolling": 6164350.43,
+      "dev": -7.8126,
+      "type": "DROP"
+    },
+    {
+      "date": "2025-03-02",
+      "weekday": "Sunday",
+      "sales": 6460701.0,
+      "rolling": 6256861.0,
+      "dev": 3.2579,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-03",
+      "weekday": "Monday",
+      "sales": 6495818.0,
+      "rolling": 6292895.0,
+      "dev": 3.2246,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-04",
+      "weekday": "Tuesday",
+      "sales": 6264059.0,
+      "rolling": 6286901.57,
+      "dev": -0.3633,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-05",
+      "weekday": "Wednesday",
+      "sales": 6222958.0,
+      "rolling": 6254228.57,
+      "dev": -0.5,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-06",
+      "weekday": "Thursday",
+      "sales": 6467731.0,
+      "rolling": 6285217.86,
+      "dev": 2.9038,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-07",
+      "weekday": "Friday",
+      "sales": 6564612.0,
+      "rolling": 6308376.57,
+      "dev": 4.0618,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-08",
+      "weekday": "Saturday",
+      "sales": 6422141.0,
+      "rolling": 6414002.86,
+      "dev": 0.1269,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-09",
+      "weekday": "Sunday",
+      "sales": 5922139.0,
+      "rolling": 6337065.43,
+      "dev": -6.5476,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-10",
+      "weekday": "Monday",
+      "sales": 6004661.0,
+      "rolling": 6266900.14,
+      "dev": -4.1845,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-11",
+      "weekday": "Tuesday",
+      "sales": 5927978.0,
+      "rolling": 6218888.57,
+      "dev": -4.6779,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-12",
+      "weekday": "Wednesday",
+      "sales": 5937792.0,
+      "rolling": 6178150.57,
+      "dev": -3.8905,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-13",
+      "weekday": "Thursday",
+      "sales": 6285860.0,
+      "rolling": 6152169.0,
+      "dev": 2.1731,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-14",
+      "weekday": "Friday",
+      "sales": 6130657.0,
+      "rolling": 6090175.43,
+      "dev": 0.6647,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-15",
+      "weekday": "Saturday",
+      "sales": 6121905.0,
+      "rolling": 6047284.57,
+      "dev": 1.2339,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-16",
+      "weekday": "Sunday",
+      "sales": 5878433.0,
+      "rolling": 6041040.86,
+      "dev": -2.6917,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-17",
+      "weekday": "Monday",
+      "sales": 5979251.0,
+      "rolling": 6037410.86,
+      "dev": -0.9633,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-18",
+      "weekday": "Tuesday",
+      "sales": 6167282.0,
+      "rolling": 6071597.14,
+      "dev": 1.5759,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-19",
+      "weekday": "Wednesday",
+      "sales": 6186166.0,
+      "rolling": 6107079.14,
+      "dev": 1.295,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-20",
+      "weekday": "Thursday",
+      "sales": 6231658.0,
+      "rolling": 6099336.0,
+      "dev": 2.1694,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-21",
+      "weekday": "Friday",
+      "sales": 6543846.0,
+      "rolling": 6158363.0,
+      "dev": 6.2595,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-22",
+      "weekday": "Saturday",
+      "sales": 6208052.0,
+      "rolling": 6170669.71,
+      "dev": 0.6058,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-23",
+      "weekday": "Sunday",
+      "sales": 5769478.0,
+      "rolling": 6155104.71,
+      "dev": -6.2652,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-24",
+      "weekday": "Monday",
+      "sales": 5903415.0,
+      "rolling": 6144271.0,
+      "dev": -3.92,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-25",
+      "weekday": "Tuesday",
+      "sales": 5959299.0,
+      "rolling": 6114559.14,
+      "dev": -2.5392,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-26",
+      "weekday": "Wednesday",
+      "sales": 6350867.0,
+      "rolling": 6138087.86,
+      "dev": 3.4665,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-27",
+      "weekday": "Thursday",
+      "sales": 6239652.0,
+      "rolling": 6139229.86,
+      "dev": 1.6357,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-28",
+      "weekday": "Friday",
+      "sales": 5907916.0,
+      "rolling": 6048382.71,
+      "dev": -2.3224,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-29",
+      "weekday": "Saturday",
+      "sales": 6485930.0,
+      "rolling": 6088079.57,
+      "dev": 6.5349,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-30",
+      "weekday": "Sunday",
+      "sales": 6218453.0,
+      "rolling": 6152218.86,
+      "dev": 1.0766,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-03-31",
+      "weekday": "Monday",
+      "sales": 5646534.0,
+      "rolling": 6115521.57,
+      "dev": -7.6688,
+      "type": "DROP"
+    },
+    {
+      "date": "2025-04-01",
+      "weekday": "Tuesday",
+      "sales": 6041810.0,
+      "rolling": 6127308.86,
+      "dev": -1.3954,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-02",
+      "weekday": "Wednesday",
+      "sales": 6339082.0,
+      "rolling": 6125625.29,
+      "dev": 3.4847,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-03",
+      "weekday": "Thursday",
+      "sales": 6397564.0,
+      "rolling": 6148184.14,
+      "dev": 4.0562,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-04",
+      "weekday": "Friday",
+      "sales": 5852388.0,
+      "rolling": 6140251.57,
+      "dev": -4.6881,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-05",
+      "weekday": "Saturday",
+      "sales": 5840795.0,
+      "rolling": 6048089.43,
+      "dev": -3.4274,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-06",
+      "weekday": "Sunday",
+      "sales": 5967900.0,
+      "rolling": 6012296.14,
+      "dev": -0.7384,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-07",
+      "weekday": "Monday",
+      "sales": 6251372.0,
+      "rolling": 6098701.57,
+      "dev": 2.5033,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-08",
+      "weekday": "Tuesday",
+      "sales": 6247113.0,
+      "rolling": 6128030.57,
+      "dev": 1.9432,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-09",
+      "weekday": "Wednesday",
+      "sales": 6668154.0,
+      "rolling": 6175040.86,
+      "dev": 7.9856,
+      "type": "SPIKE"
+    },
+    {
+      "date": "2025-04-10",
+      "weekday": "Thursday",
+      "sales": 6220661.0,
+      "rolling": 6149769.0,
+      "dev": 1.1528,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-11",
+      "weekday": "Friday",
+      "sales": 6388559.0,
+      "rolling": 6226364.86,
+      "dev": 2.605,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-12",
+      "weekday": "Saturday",
+      "sales": 5737621.0,
+      "rolling": 6211625.71,
+      "dev": -7.6309,
+      "type": "DROP"
+    },
+    {
+      "date": "2025-04-13",
+      "weekday": "Sunday",
+      "sales": 5949402.0,
+      "rolling": 6208983.14,
+      "dev": -4.1807,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-14",
+      "weekday": "Monday",
+      "sales": 6021651.0,
+      "rolling": 6176165.86,
+      "dev": -2.5018,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-15",
+      "weekday": "Tuesday",
+      "sales": 6001103.0,
+      "rolling": 6141021.57,
+      "dev": -2.2784,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-16",
+      "weekday": "Wednesday",
+      "sales": 6217387.0,
+      "rolling": 6076626.29,
+      "dev": 2.3164,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-17",
+      "weekday": "Thursday",
+      "sales": 6485502.0,
+      "rolling": 6114460.71,
+      "dev": 6.0683,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-18",
+      "weekday": "Friday",
+      "sales": 6065185.0,
+      "rolling": 6068264.43,
+      "dev": -0.0507,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-19",
+      "weekday": "Saturday",
+      "sales": 6492229.0,
+      "rolling": 6176065.57,
+      "dev": 5.1192,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-20",
+      "weekday": "Sunday",
+      "sales": 6228154.0,
+      "rolling": 6215887.29,
+      "dev": 0.1973,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-21",
+      "weekday": "Monday",
+      "sales": 5995217.0,
+      "rolling": 6212111.0,
+      "dev": -3.4915,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-22",
+      "weekday": "Tuesday",
+      "sales": 5800471.0,
+      "rolling": 6183449.29,
+      "dev": -6.1936,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-23",
+      "weekday": "Wednesday",
+      "sales": 6042808.0,
+      "rolling": 6158509.43,
+      "dev": -1.8787,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-24",
+      "weekday": "Thursday",
+      "sales": 5912419.0,
+      "rolling": 6076640.43,
+      "dev": -2.7025,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-25",
+      "weekday": "Friday",
+      "sales": 6081187.0,
+      "rolling": 6078926.43,
+      "dev": 0.0372,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-26",
+      "weekday": "Saturday",
+      "sales": 6084550.0,
+      "rolling": 6020686.57,
+      "dev": 1.0607,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-27",
+      "weekday": "Sunday",
+      "sales": 6207269.0,
+      "rolling": 6017703.0,
+      "dev": 3.1501,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-28",
+      "weekday": "Monday",
+      "sales": 6378713.0,
+      "rolling": 6072488.14,
+      "dev": 5.0428,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-29",
+      "weekday": "Tuesday",
+      "sales": 6214997.0,
+      "rolling": 6131706.14,
+      "dev": 1.3584,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-04-30",
+      "weekday": "Wednesday",
+      "sales": 6186731.0,
+      "rolling": 6152266.57,
+      "dev": 0.5602,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-01",
+      "weekday": "Thursday",
+      "sales": 6313876.0,
+      "rolling": 6209617.57,
+      "dev": 1.679,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-02",
+      "weekday": "Friday",
+      "sales": 6573464.0,
+      "rolling": 6279942.86,
+      "dev": 4.6739,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-03",
+      "weekday": "Saturday",
+      "sales": 6594461.0,
+      "rolling": 6352787.29,
+      "dev": 3.8042,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-04",
+      "weekday": "Sunday",
+      "sales": 6520227.0,
+      "rolling": 6397495.57,
+      "dev": 1.9184,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-05",
+      "weekday": "Monday",
+      "sales": 6135898.0,
+      "rolling": 6362807.71,
+      "dev": -3.5662,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-06",
+      "weekday": "Tuesday",
+      "sales": 6557540.0,
+      "rolling": 6411742.43,
+      "dev": 2.2739,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-07",
+      "weekday": "Wednesday",
+      "sales": 6070902.0,
+      "rolling": 6395195.43,
+      "dev": -5.0709,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-08",
+      "weekday": "Thursday",
+      "sales": 6101259.0,
+      "rolling": 6364821.57,
+      "dev": -4.1409,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-09",
+      "weekday": "Friday",
+      "sales": 6378613.0,
+      "rolling": 6336985.71,
+      "dev": 0.6569,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-10",
+      "weekday": "Saturday",
+      "sales": 6776926.0,
+      "rolling": 6363052.14,
+      "dev": 6.5043,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-11",
+      "weekday": "Sunday",
+      "sales": 6409347.0,
+      "rolling": 6347212.14,
+      "dev": 0.9789,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-12",
+      "weekday": "Monday",
+      "sales": 6183970.0,
+      "rolling": 6354079.57,
+      "dev": -2.6772,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-13",
+      "weekday": "Tuesday",
+      "sales": 6102399.0,
+      "rolling": 6289059.43,
+      "dev": -2.968,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-14",
+      "weekday": "Wednesday",
+      "sales": 7141635.0,
+      "rolling": 6442021.29,
+      "dev": 10.8602,
+      "type": "SPIKE"
+    },
+    {
+      "date": "2025-05-15",
+      "weekday": "Thursday",
+      "sales": 6070607.0,
+      "rolling": 6437642.43,
+      "dev": -5.7014,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-16",
+      "weekday": "Friday",
+      "sales": 6328908.0,
+      "rolling": 6430541.71,
+      "dev": -1.5805,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-17",
+      "weekday": "Saturday",
+      "sales": 6138136.0,
+      "rolling": 6339286.0,
+      "dev": -3.1731,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-18",
+      "weekday": "Sunday",
+      "sales": 5855097.0,
+      "rolling": 6260107.43,
+      "dev": -6.4697,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-19",
+      "weekday": "Monday",
+      "sales": 6549322.0,
+      "rolling": 6312300.57,
+      "dev": 3.7549,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-20",
+      "weekday": "Tuesday",
+      "sales": 6069780.0,
+      "rolling": 6307640.71,
+      "dev": -3.771,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-21",
+      "weekday": "Wednesday",
+      "sales": 6236084.0,
+      "rolling": 6178276.29,
+      "dev": 0.9357,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-22",
+      "weekday": "Thursday",
+      "sales": 6348863.0,
+      "rolling": 6218027.14,
+      "dev": 2.1041,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-23",
+      "weekday": "Friday",
+      "sales": 6124014.0,
+      "rolling": 6188756.57,
+      "dev": -1.0461,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-24",
+      "weekday": "Saturday",
+      "sales": 5984745.0,
+      "rolling": 6166843.57,
+      "dev": -2.9529,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-25",
+      "weekday": "Sunday",
+      "sales": 6042944.0,
+      "rolling": 6193678.86,
+      "dev": -2.4337,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-26",
+      "weekday": "Monday",
+      "sales": 5859705.0,
+      "rolling": 6095162.14,
+      "dev": -3.863,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-27",
+      "weekday": "Tuesday",
+      "sales": 5961128.0,
+      "rolling": 6079640.43,
+      "dev": -1.9493,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-28",
+      "weekday": "Wednesday",
+      "sales": 6152581.0,
+      "rolling": 6067711.43,
+      "dev": 1.3987,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-29",
+      "weekday": "Thursday",
+      "sales": 6329847.0,
+      "rolling": 6064994.86,
+      "dev": 4.3669,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-30",
+      "weekday": "Friday",
+      "sales": 6313464.0,
+      "rolling": 6092059.14,
+      "dev": 3.6343,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-05-31",
+      "weekday": "Saturday",
+      "sales": 6198313.0,
+      "rolling": 6122568.86,
+      "dev": 1.2371,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-01",
+      "weekday": "Sunday",
+      "sales": 6014316.0,
+      "rolling": 6118479.14,
+      "dev": -1.7024,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-02",
+      "weekday": "Monday",
+      "sales": 6004685.0,
+      "rolling": 6139190.57,
+      "dev": -2.1909,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-03",
+      "weekday": "Tuesday",
+      "sales": 6137106.0,
+      "rolling": 6164330.29,
+      "dev": -0.4416,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-04",
+      "weekday": "Wednesday",
+      "sales": 6461396.0,
+      "rolling": 6208446.71,
+      "dev": 4.0743,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-05",
+      "weekday": "Thursday",
+      "sales": 6375386.0,
+      "rolling": 6214952.29,
+      "dev": 2.5814,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-06",
+      "weekday": "Friday",
+      "sales": 6074681.0,
+      "rolling": 6180840.43,
+      "dev": -1.7176,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-07",
+      "weekday": "Saturday",
+      "sales": 5951374.0,
+      "rolling": 6145563.43,
+      "dev": -3.1598,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-08",
+      "weekday": "Sunday",
+      "sales": 6335262.0,
+      "rolling": 6191412.86,
+      "dev": 2.3234,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-09",
+      "weekday": "Monday",
+      "sales": 6231438.0,
+      "rolling": 6223806.14,
+      "dev": 0.1226,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-10",
+      "weekday": "Tuesday",
+      "sales": 6470268.0,
+      "rolling": 6271400.71,
+      "dev": 3.171,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-11",
+      "weekday": "Wednesday",
+      "sales": 5843163.0,
+      "rolling": 6183081.71,
+      "dev": -5.4976,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-12",
+      "weekday": "Thursday",
+      "sales": 6119278.0,
+      "rolling": 6146494.86,
+      "dev": -0.4428,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-13",
+      "weekday": "Friday",
+      "sales": 6457223.0,
+      "rolling": 6201143.71,
+      "dev": 4.1295,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-14",
+      "weekday": "Saturday",
+      "sales": 6127783.0,
+      "rolling": 6226345.0,
+      "dev": -1.583,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-15",
+      "weekday": "Sunday",
+      "sales": 6161690.0,
+      "rolling": 6201549.0,
+      "dev": -0.6427,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-16",
+      "weekday": "Monday",
+      "sales": 5765326.0,
+      "rolling": 6134961.57,
+      "dev": -6.0251,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-17",
+      "weekday": "Tuesday",
+      "sales": 6266481.0,
+      "rolling": 6105849.14,
+      "dev": 2.6308,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-18",
+      "weekday": "Wednesday",
+      "sales": 6065383.0,
+      "rolling": 6137594.86,
+      "dev": -1.1765,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-19",
+      "weekday": "Thursday",
+      "sales": 6635336.0,
+      "rolling": 6211317.43,
+      "dev": 6.8265,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-20",
+      "weekday": "Friday",
+      "sales": 6003420.0,
+      "rolling": 6146488.43,
+      "dev": -2.3276,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-21",
+      "weekday": "Saturday",
+      "sales": 5968541.0,
+      "rolling": 6123739.57,
+      "dev": -2.5344,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-22",
+      "weekday": "Sunday",
+      "sales": 6692637.0,
+      "rolling": 6199589.14,
+      "dev": 7.9529,
+      "type": "SPIKE"
+    },
+    {
+      "date": "2025-06-23",
+      "weekday": "Monday",
+      "sales": 6103988.0,
+      "rolling": 6247969.43,
+      "dev": -2.3045,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-24",
+      "weekday": "Tuesday",
+      "sales": 6257243.0,
+      "rolling": 6246649.71,
+      "dev": 0.1696,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-25",
+      "weekday": "Wednesday",
+      "sales": 5885282.0,
+      "rolling": 6220921.0,
+      "dev": -5.3953,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-26",
+      "weekday": "Thursday",
+      "sales": 6177116.0,
+      "rolling": 6155461.0,
+      "dev": 0.3518,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-27",
+      "weekday": "Friday",
+      "sales": 6213307.0,
+      "rolling": 6185444.86,
+      "dev": 0.4504,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-28",
+      "weekday": "Saturday",
+      "sales": 6294877.0,
+      "rolling": 6232064.29,
+      "dev": 1.0079,
+      "type": "NORMAL"
+    },
+    {
+      "date": "2025-06-29",
+      "weekday": "Sunday",
+      "sales": 6377657.0,
+      "rolling": 6187067.14,
+      "dev": 3.0805,
+      "type": "NORMAL"
+    }
+  ],
+  "store_data": [
+    {
+      "store_id": "2",
+      "name": "Store_2",
+      "region": "South",
+      "city": "Delhi",
+      "sales": 112996928.0,
+      "units": 47917
+    },
+    {
+      "store_id": "9",
+      "name": "Store_9",
+      "region": "East",
+      "city": "Mumbai",
+      "sales": 112364707.0,
+      "units": 47685
+    },
+    {
+      "store_id": "8",
+      "name": "Store_8",
+      "region": "South",
+      "city": "Bengaluru",
+      "sales": 111635071.0,
+      "units": 47290
+    },
+    {
+      "store_id": "10",
+      "name": "Store_10",
+      "region": "West",
+      "city": "Bengaluru",
+      "sales": 111476435.0,
+      "units": 47168
+    },
+    {
+      "store_id": "6",
+      "name": "Store_6",
+      "region": "East",
+      "city": "Delhi",
+      "sales": 111412505.0,
+      "units": 47160
+    },
+    {
+      "store_id": "1",
+      "name": "Store_1",
+      "region": "North",
+      "city": "Kolkata",
+      "sales": 111118912.0,
+      "units": 47105
+    },
+    {
+      "store_id": "4",
+      "name": "Store_4",
+      "region": "South",
+      "city": "Mumbai",
+      "sales": 111043315.0,
+      "units": 46906
+    },
+    {
+      "store_id": "7",
+      "name": "Store_7",
+      "region": "East",
+      "city": "Chennai",
+      "sales": 110946077.0,
+      "units": 47567
+    },
+    {
+      "store_id": "3",
+      "name": "Store_3",
+      "region": "West",
+      "city": "Kolkata",
+      "sales": 110853619.0,
+      "units": 46996
+    },
+    {
+      "store_id": "5",
+      "name": "Store_5",
+      "region": "North",
+      "city": "Delhi",
+      "sales": 108614641.0,
+      "units": 46259
+    }
+  ],
+  "cat_data": [
+    {
+      "cat": "Electronics",
+      "sales": 345683958.0,
+      "units": 131354
+    },
+    {
+      "cat": "Clothing",
+      "sales": 264707344.0,
+      "units": 114301
+    },
+    {
+      "cat": "Home",
+      "sales": 178822046.0,
+      "units": 85004
+    },
+    {
+      "cat": "Groceries",
+      "sales": 168253590.0,
+      "units": 56698
+    },
+    {
+      "cat": "Personal Care",
+      "sales": 154995272.0,
+      "units": 84696
+    }
+  ],
+  "region_data": [
+    {
+      "region": "South",
+      "sales": 335675314.0
+    },
+    {
+      "region": "East",
+      "sales": 334723289.0
+    },
+    {
+      "region": "West",
+      "sales": 222330054.0
+    },
+    {
+      "region": "North",
+      "sales": 219733553.0
+    }
+  ],
+  "monthly_data": [
+    {
+      "month": "2025-01",
+      "sales": 190722852.0
+    },
+    {
+      "month": "2025-02",
+      "sales": 172937665.0
+    },
+    {
+      "month": "2025-03",
+      "sales": 190588001.0
+    },
+    {
+      "month": "2025-04",
+      "sales": 184317994.0
+    },
+    {
+      "month": "2025-05",
+      "sales": 194424055.0
+    },
+    {
+      "month": "2025-06",
+      "sales": 179471643.0
+    }
+  ]
+}
